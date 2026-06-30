@@ -4,7 +4,7 @@ from chatbot.preprocess import preprocess_text
 from chatbot.similarity import SimilarityMatcher
 
 class FAQChatbot:
-    def init(self, faq_file):
+    def __init__(self, faq_file):
         with open(faq_file, "r") as file:
             self.faqs=json.load(file)
         self.questions=[

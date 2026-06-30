@@ -15,4 +15,4 @@ def preprocess_text(text):
         and word not in string.punctuation
     ]
 
-    return " ".json(tokens)
+    return " ".join(tokens)
